@@ -1,0 +1,3 @@
+root access: root
+ip add: 76.13.183.207
+password: Jether1@garque

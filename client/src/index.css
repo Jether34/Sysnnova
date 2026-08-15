@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  --color-sidebar: #0f172a;
+  --color-surface: #f8fafc;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface text-slate-800 antialiased dark:bg-black dark:text-slate-200;
+}
+
+@layer components {
+  /* ---------- cards ---------- */
+
+  .card {
+    @apply bg-white rounded-xl border border-slate-200 shadow-sm dark:bg-slate-950 dark:border-slate-800;
+  }
+
+  .card-pad {
+    @apply bg-white rounded-xl border border-slate-200 shadow-sm p-5 sm:p-6 dark:bg-slate-950 dark:border-slate-800;
+  }
+
+  /* ---------- buttons ---------- */
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors select-none
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transition-none;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors select-none
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transition-none
+      bg-primary-600 text-white enabled:hover:bg-primary-700 enabled:active:bg-primary-800;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors select-none
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transition-none
+      border border-slate-300 bg-white text-slate-700 enabled:hover:bg-slate-50 enabled:active:bg-slate-100
+      dark:border-slate-600 dark:bg-slate-900 dark:text-slate-300 dark:enabled:hover:bg-slate-800 dark:enabled:active:bg-slate-700;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors select-none
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transition-none
+      text-slate-600 enabled:hover:bg-slate-100 enabled:active:bg-slate-200
+      dark:text-slate-400 dark:enabled:hover:bg-white/10 dark:enabled:active:bg-white/15;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors select-none
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600
+      disabled:opacity-50 disabled:cursor-not-allowed disabled:transition-none
+      bg-red-600 text-white enabled:hover:bg-red-700 enabled:active:bg-red-800;
+  }
+
+  /* ---------- form controls ---------- */
+
+  .input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900
+      placeholder:text-slate-400 transition
+      focus:border-primary-500 focus:ring-2 focus:ring-primary-500/25 focus:outline-none
+      disabled:bg-slate-50 disabled:text-slate-400
+      dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500
+      dark:disabled:bg-slate-800 dark:disabled:text-slate-500;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-slate-700 mb-1.5 dark:text-slate-300;
+  }
+
+  /* ---------- badges ---------- */
+
+  .badge-success {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium whitespace-nowrap bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium whitespace-nowrap bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400;
+  }
+
+  .badge-neutral {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium whitespace-nowrap bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300;
+  }
+
+  .badge-danger {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium whitespace-nowrap bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-400;
+  }
+
+  /* ---------- tables ---------- */
+
+  .table {
+    @apply w-full text-sm;
+  }
+  .table thead th {
+    @apply px-4 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-slate-500 bg-slate-50 border-b border-slate-200 whitespace-nowrap dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400;
+  }
+  .table tbody td {
+    @apply px-4 py-2.5 border-b border-slate-100 align-middle text-slate-700 dark:border-slate-800 dark:text-slate-300;
+  }
+  .table tbody tr {
+    @apply transition hover:bg-slate-50 dark:hover:bg-slate-900;
+  }
+  .table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  /* ---------- dark sidebar ---------- */
+
+  .sidebar-link {
+    @apply flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-400 transition
+      hover:bg-white/5 hover:text-white;
+  }
+
+  .sidebar-link-active {
+    @apply bg-white/10 text-white;
+  }
+}
+
+/* ---------- landing animations ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes sysnnova-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fade-up {
+  animation: sysnnova-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes sysnnova-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(24px, -28px) scale(1.07);
+  }
+}
+
+.animate-drift {
+  animation: sysnnova-drift 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-fade-up,
+  .animate-drift {
+    animation: none;
+  }
+}
+
+/* ---------- scrollbar removal ---------- */
+
+*,
+*::before,
+*::after {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}

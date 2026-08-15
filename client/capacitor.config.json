@@ -1,0 +1,12 @@
+{
+  "appId": "cloud.sysnnova.app",
+  "appName": "Sysnnova",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#0f172a"
+  },
+  "server": {
+    "androidScheme": "https",
+    "appStartPath": "/app-welcome"
+  }
+}

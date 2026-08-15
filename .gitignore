@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+*.log
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Artifacts
+*.apk
+*.aab
+*.exe
+*.AppImage
+*.deb
+*.rpm
+*.tar.gz
+*.exe.blockmap
+
+# Electron build outputs
+desktop/release/
+desktop/web/
+desktop/web.bak/
+desktop/node_modules/
+
+# Cache
+.cache/
+.tmp/
+tmp/
+/tmp/opencode/
+
+# IDE specific
+*.user
+*.suo
+
+# Server uploads
+server/uploads/
+
+# Test artifacts
+*.test.js
+*.test.ts
