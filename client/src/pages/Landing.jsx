@@ -344,15 +344,15 @@ export default function Landing() {
           </div>
 
 <div className="hidden md:flex items-center gap-2">
-            <a href={DOWNLOADS.windows} className="btn-outline !py-2 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+            <a href={DOWNLOADS.windows} className="btn-outline !py-2 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
               <img src="/windows-logo.png" alt="Windows" className="h-5 w-5 mr-1.5" />
               Windows
             </a>
-            <a href={DOWNLOADS.linux} className="btn-outline !py-2 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+            <a href={DOWNLOADS.linux} className="btn-outline !py-2 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
               <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5 mr-1.5" />
               Linux
             </a>
-            <a href={DOWNLOADS.android} className="btn-primary !py-2 border-2 border-emerald-800 hover:bg-emerald-800 hover:text-white transition">
+            <a href={DOWNLOADS.android} className="btn-primary !py-2 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
               <img src="/android-logo.png" alt="Android" className="h-5 w-5 mr-1.5" />
               Android
             </a>
@@ -389,15 +389,15 @@ export default function Landing() {
               </button>
 {downloadsOpen && (
                 <div className="mt-1 space-y-1">
-                  <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-slate-900">
+                  <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white text-black border-2 border-black hover:bg-white hover:text-black transition-none">
                     <img src="/windows-logo.png" alt="Windows" className="h-5 w-5" />
                     Windows
                   </a>
-                  <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-slate-900">
+                  <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white text-black border-2 border-black hover:bg-white hover:text-black transition-none">
                     <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5" />
                     Linux
                   </a>
-                  <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-emerald-800">
+                  <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white text-black border-2 border-black hover:bg-white hover:text-black transition-none">
                     <img src="/android-logo.png" alt="Android" className="h-5 w-5" />
                     Android
                   </a>
@@ -429,15 +429,15 @@ export default function Landing() {
                 visibility, all in one secure platform.
               </p>
 <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
-                <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+                <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
                   <img src="/windows-logo.png" alt="Windows" className="h-5 w-5 mr-2" />
                   Windows
                 </a>
-                <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+                <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
                   <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5 mr-2" />
                   Linux
                 </a>
-                <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5 border-2 border-emerald-800 hover:bg-emerald-800 hover:text-white transition">
+                <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5 bg-white border-2 border-black text-black hover:bg-white hover:text-black transition-none">
                   <img src="/android-logo.png" alt="Android" className="h-5 w-5 mr-2" />
                   Android
                 </a>
