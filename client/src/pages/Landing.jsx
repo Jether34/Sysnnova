@@ -345,7 +345,13 @@ export default function Landing() {
 
           <div className="hidden md:flex items-center gap-2">
             <a href={DOWNLOADS.windows} className="btn-outline !py-2">
-              <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
+              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 6h12v12H6z" fill="#0078D7"/>
+                <path d="M6 6h12v6H6z" fill="#0078D7"/>
+                <path d="M6 12h6v6H6z" fill="#107C10"/>
+                <path d="M12 12h6v6H12z" fill="#F25022"/>
+                <path d="M6 18h6v6H6z" fill="#FFB900"/>
+              </svg>
               Windows
             </a>
             <a href={DOWNLOADS.linux} className="btn-outline !py-2">
@@ -355,7 +361,15 @@ export default function Landing() {
               Linux
             </a>
             <a href={DOWNLOADS.android} className="btn-primary !py-2">
-              <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
+              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
+              </svg>
+              Linux
+            </a>
+            <a href={DOWNLOADS.android} className="btn-primary !py-2">
+              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
+              </svg>
               Android
             </a>
           </div>
@@ -392,7 +406,13 @@ export default function Landing() {
               {downloadsOpen && (
                 <div className="mt-1 space-y-1">
                   <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M6 6h12v12H6z" fill="#0078D7"/>
+                      <path d="M6 6h12v6H6z" fill="#0078D7"/>
+                      <path d="M6 12h6v6H6z" fill="#107C10"/>
+                      <path d="M12 12h6v6H12z" fill="#F25022"/>
+                      <path d="M6 18h6v6H6z" fill="#FFB900"/>
+                    </svg>
                     Windows
                   </a>
                   <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
@@ -402,7 +422,9 @@ export default function Landing() {
                     Linux
                   </a>
                   <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
+                    </svg>
                     Android
                   </a>
                 </div>
@@ -434,7 +456,13 @@ export default function Landing() {
               </p>
               <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
                 <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5">
-                  <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
+                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M6 6h12v12H6z" fill="#0078D7"/>
+                    <path d="M6 6h12v6H6z" fill="#0078D7"/>
+                    <path d="M6 12h6v6H6z" fill="#107C10"/>
+                    <path d="M12 12h6v6H12z" fill="#F25022"/>
+                    <path d="M6 18h6v6H6z" fill="#FFB900"/>
+                  </svg>
                   Windows
                 </a>
                 <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5">
@@ -444,7 +472,9 @@ export default function Landing() {
                   Linux
                 </a>
                 <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5">
-                  <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
+                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
+                  </svg>
                   Android
                 </a>
               </div>
