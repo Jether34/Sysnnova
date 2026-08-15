@@ -343,33 +343,17 @@ export default function Landing() {
             </nav>
           </div>
 
-          <div className="hidden md:flex items-center gap-2">
-            <a href={DOWNLOADS.windows} className="btn-outline !py-2">
-              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M6 6h12v12H6z" fill="#0078D7"/>
-                <path d="M6 6h12v6H6z" fill="#0078D7"/>
-                <path d="M6 12h6v6H6z" fill="#107C10"/>
-                <path d="M12 12h6v6H12z" fill="#F25022"/>
-                <path d="M6 18h6v6H6z" fill="#FFB900"/>
-              </svg>
+<div className="hidden md:flex items-center gap-2">
+            <a href={DOWNLOADS.windows} className="btn-outline !py-2 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+              <img src="/windows-logo.png" alt="Windows" className="h-5 w-5 mr-1.5" />
               Windows
             </a>
-            <a href={DOWNLOADS.linux} className="btn-outline !py-2">
-              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
-              </svg>
+            <a href={DOWNLOADS.linux} className="btn-outline !py-2 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+              <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5 mr-1.5" />
               Linux
             </a>
-            <a href={DOWNLOADS.android} className="btn-primary !py-2">
-              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
-              </svg>
-              Linux
-            </a>
-            <a href={DOWNLOADS.android} className="btn-primary !py-2">
-              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
-              </svg>
+            <a href={DOWNLOADS.android} className="btn-primary !py-2 border-2 border-emerald-800 hover:bg-emerald-800 hover:text-white transition">
+              <img src="/android-logo.png" alt="Android" className="h-5 w-5 mr-1.5" />
               Android
             </a>
           </div>
@@ -403,28 +387,18 @@ export default function Landing() {
                 </span>
                 <span className={`material-symbols-outlined text-base transition-transform ${downloadsOpen ? "rotate-180" : ""}`} aria-hidden="true">expand_more</span>
               </button>
-              {downloadsOpen && (
+{downloadsOpen && (
                 <div className="mt-1 space-y-1">
-                  <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M6 6h12v12H6z" fill="#0078D7"/>
-                      <path d="M6 6h12v6H6z" fill="#0078D7"/>
-                      <path d="M6 12h6v6H6z" fill="#107C10"/>
-                      <path d="M12 12h6v6H12z" fill="#F25022"/>
-                      <path d="M6 18h6v6H6z" fill="#FFB900"/>
-                    </svg>
+                  <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-slate-900">
+                    <img src="/windows-logo.png" alt="Windows" className="h-5 w-5" />
                     Windows
                   </a>
-                  <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
-                    </svg>
+                  <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-slate-900">
+                    <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5" />
                     Linux
                   </a>
-                  <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
-                    </svg>
+                  <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition border-2 border-emerald-800">
+                    <img src="/android-logo.png" alt="Android" className="h-5 w-5" />
                     Android
                   </a>
                 </div>
@@ -454,27 +428,17 @@ export default function Landing() {
                 advisers review and publish them, students see their results instantly, and administrators get full
                 visibility, all in one secure platform.
               </p>
-              <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
-                <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5">
-                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M6 6h12v12H6z" fill="#0078D7"/>
-                    <path d="M6 6h12v6H6z" fill="#0078D7"/>
-                    <path d="M6 12h6v6H6z" fill="#107C10"/>
-                    <path d="M12 12h6v6H12z" fill="#F25022"/>
-                    <path d="M6 18h6v6H6z" fill="#FFB900"/>
-                  </svg>
+<div className="mt-9 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
+                <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+                  <img src="/windows-logo.png" alt="Windows" className="h-5 w-5 mr-2" />
                   Windows
                 </a>
-                <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5">
-                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
-                  </svg>
+                <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5 border-2 border-slate-900 hover:bg-slate-900 hover:text-white transition">
+                  <img src="/linux-logo.svg" alt="Linux" className="h-5 w-5 mr-2" />
                   Linux
                 </a>
-                <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5">
-                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="#3DDC84" aria-hidden="true">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 19v1.95c-1.98.35-3.5 2.23-3.5 4.48 0 2.81 2.29 5.09 5.1 5.09.5 0 .99-.05 1.47-.14L12.5 22H11.5v1.93zM12 3.5c-.58 0-1.14.23-1.56.61l1.25 2.75L8 8.88l-2.25-.75L9.5 5.13 8.18 3.92 10.5 3.5h1.5l-2.32.92L13.5 5.13 12 6.4l1.25-.75 1.25.75L14.5 3.92 13.18 3.5H12zM6.5 9.5c0-.83.67-1.5 1.5-1.5H16c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5z"/>
-                  </svg>
+                <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5 border-2 border-emerald-800 hover:bg-emerald-800 hover:text-white transition">
+                  <img src="/android-logo.png" alt="Android" className="h-5 w-5 mr-2" />
                   Android
                 </a>
               </div>

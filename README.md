@@ -70,19 +70,6 @@ A complete MERN-stack (MongoDB, Express, React, Node) system that digitalizes th
 
 ---
 
-## Admin Account (for testing/development)
-
-| Field | Value |
-|-------|-------|
-| **Email** | `garquejether681@gmail.com` |
-| **Password** | `123456` |
-| **Role** | Admin |
-| **School** | Default seeded school |
-
-> **Note**: This account is seeded automatically on first run. Change the password immediately in production.
-
----
-
 ## Prerequisites
 
 - Node.js ≥ 18 (tested on 22)
