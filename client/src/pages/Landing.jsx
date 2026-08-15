@@ -345,16 +345,18 @@ export default function Landing() {
 
           <div className="hidden md:flex items-center gap-2">
             <a href={DOWNLOADS.windows} className="btn-outline !py-2">
-              <span className="material-symbols-outlined text-lg" aria-hidden="true">download</span>
-              Download for Windows
+              <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
+              Windows
             </a>
             <a href={DOWNLOADS.linux} className="btn-outline !py-2">
-              <img src="/sysnnova-logo-512.png" alt="Sysnnova" className="h-5 w-5 mr-1.5" />
-              Download for Linux
+              <svg className="h-5 w-5 mr-1.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+              </svg>
+              Linux
             </a>
             <a href={DOWNLOADS.android} className="btn-primary !py-2">
               <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
-              Download for Mobile
+              Android
             </a>
           </div>
 
@@ -391,15 +393,17 @@ export default function Landing() {
                 <div className="mt-1 space-y-1">
                   <a href={DOWNLOADS.windows} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
                     <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
-                    Desktop version
+                    Windows
                   </a>
                   <a href={DOWNLOADS.linux} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
-                    <img src="/sysnnova-logo-512.png" alt="Sysnnova" className="h-5 w-5" />
-                    Linux version
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                    </svg>
+                    Linux
                   </a>
                   <a href={DOWNLOADS.android} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 text-sm font-medium transition">
                     <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
-                    Mobile version
+                    Android
                   </a>
                 </div>
               )}
@@ -430,16 +434,18 @@ export default function Landing() {
               </p>
               <div className="mt-9 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
                 <a href={DOWNLOADS.windows} className="btn-primary text-base px-7 py-3.5">
-                  <span className="material-symbols-outlined text-lg" aria-hidden="true">download</span>
-                  Download for Windows
+                  <span className="material-symbols-outlined text-lg" aria-hidden="true">desktop_windows</span>
+                  Windows
                 </a>
                 <a href={DOWNLOADS.linux} className="btn-outline text-base px-7 py-3.5">
-                  <img src="/sysnnova-logo-512.png" alt="Sysnnova" className="h-5 w-5 mr-2" />
-                  Download for Linux
+                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                  </svg>
+                  Linux
                 </a>
                 <a href={DOWNLOADS.android} className="btn-outline text-base px-7 py-3.5">
                   <span className="material-symbols-outlined text-lg" aria-hidden="true">smartphone</span>
-                  Download for Mobile
+                  Android
                 </a>
               </div>
             </div>
